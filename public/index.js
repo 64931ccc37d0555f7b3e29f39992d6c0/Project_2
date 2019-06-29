@@ -1,9 +1,7 @@
-var callAllDogs = require("./callAllDogs.js");
-
 $(document).ready(function () {
     $('.carousel').carousel()
     allDogs();
-    callAllDogs();
+    dogform();
 });
 
 // $('.button').on('click', function () {
@@ -24,9 +22,26 @@ function allDogs() {
         //     data:dataType 
         // });
     });
-
 };
-
-
-
-
+function dogform() {
+    console.log($("#dogform"));
+    $("#dogform").on("click", function (event) {
+        event.preventDefault()
+        var data ={
+            'dog_name': $("#dog_name").val()
+            'dog_breed': $("#dog_breed").val()
+            'dog_age': $("#dog_age").val()
+            'dog_img_url': $("#dog_img_url").val()
+            'dog_blurb': $("#dog_blurb").val()
+        }
+        console.log(data);
+        //$('.navlist').post();
+        // $.ajax({
+        //     type: "POST",
+        //     url: /api/dogs,
+        //     data: JSON.stringify(data),
+        //     success: success,
+        //     data:dataType 
+        // });
+    });
+}
