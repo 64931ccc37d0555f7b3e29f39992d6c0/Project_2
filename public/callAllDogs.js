@@ -1,6 +1,3 @@
-var exports = module.exports; 
-
-
 function callAllDogs() {
     event.preventDefault()
     $("div").empty();
@@ -11,5 +8,3 @@ function callAllDogs() {
         $("#result").append(index + ": " + value + '<br>');
     });
 };
-
-module.exports = callAllDogs;

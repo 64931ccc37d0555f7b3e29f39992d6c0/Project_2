@@ -22,6 +22,11 @@ is_adopted boolean default false,
 primary key (dog_id)
 )ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
+INSERT INTO dogs
+(
+    
+)
+
 CREATE TABLE favorites(
 fav_id int(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
 dog_id int(11),
