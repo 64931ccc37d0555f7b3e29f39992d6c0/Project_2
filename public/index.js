@@ -151,7 +151,7 @@ function showAllDogs() {
             for (var i = 0; i < response.length; i++) {
                 // console.log(response[i].dog_id)
                 // console.log(response[i].dog_name)
-                $(".card-deck").append("<div class='card'> <img src=" + response[i].dog_img_url + " class='card-img-top'> <div class='card-body'> <h5 class='card-title'>" + response[i].dog_name + "</h5> <p class='card-text'>" + response[i].dog_blurb + "</p> </div> </div>");
+                $(".card-deck").append("<div class='card'> <img src=" + response[i].dog_img_url + " class='card-img-top'> <div class='card-body'> <h5 class='card-title'>" + response[i].dog_name + "</h5> <p class='card-text'>" + response[i].dog_blurb + "</p> <a href='#' class='btn btn-primary'>Go somewhere</a> </div> </div>");
             }
 
         });
@@ -217,7 +217,7 @@ function showFavorties(loggedInUser){
             for (var i = 0; i < response.length; i++) {
                 // console.log(response[i].dog_id)
                 // console.log(response[i].dog_name)
-                $(".card-deck").append("<div class='card'> <img src=" + response[i].dog_img_url + " class='card-img-top'> <div class='card-body'> <h5 class='card-title'>" + response[i].dog_name + "</h5> <p class='card-text'>" + response[i].dog_blurb + "</p> </div> </div>");
+                $(".card-deck").append("<div class='card'> <img src=" + response[i].dog_img_url + " class='card-img-top'> <div class='card-body'> <h5 class='card-title'>" + response[i].dog_name + "</h5> <a href='www.cgimedia.net' class='btn btn-primary'>Favorties</a> <p class='card-text'>" + response[i].dog_blurb + "</p> </div> </div>");
             }
             // if (response.message === "All good") {
             //     router('allDogs')
